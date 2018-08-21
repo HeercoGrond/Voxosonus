@@ -22,7 +22,7 @@ pod 'Voxosonus'
 
 ## Author
 
-Heerco_Grond, heercogrond@live.nl
+HeercoGrond, heercogrond@live.nl
 
 ## License
 

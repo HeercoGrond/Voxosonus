@@ -1,0 +1,6 @@
+framework module Voxosonus {
+  umbrella header "Voxosonus-umbrella.h"
+
+  export *
+  module * { export * }
+}

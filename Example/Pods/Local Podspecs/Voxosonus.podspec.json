@@ -1,0 +1,22 @@
+{
+  "name": "Voxosonus",
+  "version": "0.1.0",
+  "summary": "A short description of Voxosonus.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Heerco_Grond/Voxosonus",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Heerco_Grond": "heercogrond@live.nl"
+  },
+  "source": {
+    "git": "https://github.com/Heerco_Grond/Voxosonus.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Voxosonus/Classes/**/*"
+}
