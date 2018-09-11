@@ -93,6 +93,11 @@
 		89BB07EB212C273F008361F0 /* LanguageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB07EA212C273F008361F0 /* LanguageAnalyzer.swift */; };
 		89BB07ED212C2763008361F0 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB07EC212C2763008361F0 /* SpeechRecognizer.swift */; };
 		89BB07EF212C27E8008361F0 /* Voxosonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BB07EE212C27E8008361F0 /* Voxosonus.swift */; };
+		89DB3F39213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89DB3F38213E712F00E59BE9 /* VoxosonusModel.mlmodel */; };
+		89DB3F3A213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89DB3F38213E712F00E59BE9 /* VoxosonusModel.mlmodel */; };
+		89DB3F3B213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89DB3F38213E712F00E59BE9 /* VoxosonusModel.mlmodel */; };
+		89DB3F3C213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89DB3F38213E712F00E59BE9 /* VoxosonusModel.mlmodel */; };
+		89DB3F43213E739000E59BE9 /* VoxosonusModel.mlmodel in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DB3F42213E739000E59BE9 /* VoxosonusModel.mlmodel */; };
 		8B55BD430033027AD5FF22D630DD9F62 /* DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = EA23EE0A80D318077C28121C5AD51D0D /* DSL.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8C1B3563112990E9012C585D0B9FD327 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F444F5EA2EB93D7C5B122BB1CE27F42 /* Foundation.framework */; };
 		8F07BA169CC06D0162A744FBB5FD873B /* QuickSpecBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA030634701A34F233F8D4099BFE8E3 /* QuickSpecBase.m */; };
@@ -345,6 +350,8 @@
 		89BB07EA212C273F008361F0 /* LanguageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAnalyzer.swift; sourceTree = "<group>"; };
 		89BB07EC212C2763008361F0 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		89BB07EE212C27E8008361F0 /* Voxosonus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voxosonus.swift; sourceTree = "<group>"; };
+		89DB3F38213E712F00E59BE9 /* VoxosonusModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = VoxosonusModel.mlmodel; path = ../VoxosonusMLSuite/VoxosonusModel.mlmodel; sourceTree = "<group>"; };
+		89DB3F42213E739000E59BE9 /* VoxosonusModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = VoxosonusModel.mlmodel; path = ../../VoxosonusModel.mlmodel; sourceTree = "<group>"; };
 		8AEEE59D038DD6ECD5D9D0768105B4C4 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/Nimble/Utils/Async.swift; sourceTree = "<group>"; };
 		8C06CDDA0FCF3A2728D85F41F725918B /* QuickSpecBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpecBase.h; path = Sources/QuickSpecBase/include/QuickSpecBase.h; sourceTree = "<group>"; };
 		8C28CDC2D0F144C4E68C9BA7FC2CDCA2 /* URL+FileName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+FileName.swift"; path = "Sources/Quick/URL+FileName.swift"; sourceTree = "<group>"; };
@@ -430,6 +437,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89DB3F43213E739000E59BE9 /* VoxosonusModel.mlmodel in Frameworks */,
 				DAD9A0E0F40D3984B78A22F8D3CDAB45 /* Foundation.framework in Frameworks */,
 				5BC12F69E33ABA27B9E0B78128CE336D /* QuartzCore.framework in Frameworks */,
 				47DEE95708BDBD11436162D166CD192E /* UIKit.framework in Frameworks */,
@@ -523,6 +531,7 @@
 		1623501078AD7652B04972ADFA6818B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89DB3F42213E739000E59BE9 /* VoxosonusModel.mlmodel */,
 				DC05FFCDBC43073BECB34E4AFEF85F02 /* FBSnapshotTestCase.framework */,
 				70D8AC5990C544716D52E500CC8B75F0 /* Nimble.framework */,
 				44F74ED2AF100C12229AEC5C7D3B7021 /* iOS */,
@@ -629,6 +638,7 @@
 		4B19B50D2BBD5485439552EBB44CF3F0 /* Voxosonus */ = {
 			isa = PBXGroup;
 			children = (
+				89DB3F38213E712F00E59BE9 /* VoxosonusModel.mlmodel */,
 				89BB07EA212C273F008361F0 /* LanguageAnalyzer.swift */,
 				83F5AD40B08F20DFBABA4974DC8B728D /* Pod */,
 				967795B345B96C573B477486F3FDE7C2 /* Support Files */,
@@ -1099,6 +1109,9 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 			};
@@ -1131,6 +1144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4274AFD1950C3D35DF45BAF2F86A2AC /* Pods-Voxosonus_Example-dummy.m in Sources */,
+				89DB3F3A213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,6 +1153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				576EFB30041741E8112A5B4A2D0B4E7A /* Voxosonus-dummy.m in Sources */,
+				89DB3F3C213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1231,6 +1246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58FE6CC1082DE5A9531B0E950AC2FD6 /* Pods-Voxosonus_Tests-dummy.m in Sources */,
+				89DB3F3B213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1277,6 +1293,7 @@
 				DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */,
 				A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */,
 				1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */,
+				89DB3F39213E712F00E59BE9 /* VoxosonusModel.mlmodel in Sources */,
 				89BB07EF212C27E8008361F0 /* Voxosonus.swift in Sources */,
 				89BB07EB212C273F008361F0 /* LanguageAnalyzer.swift in Sources */,
 				094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */,

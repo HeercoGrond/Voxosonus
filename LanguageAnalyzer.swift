@@ -35,7 +35,7 @@ class LanguageAnalyzer: NSObject {
         print(sentence)
         _wordDictionary = [:]
         _tagger.string = sentence
-        let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace];
+        let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .omitOther, .joinNames];
         let range = NSRange(location: 0, length: sentence.utf16.count)
         
         var lemmaArray: [String] = [];

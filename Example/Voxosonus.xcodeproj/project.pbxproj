@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		89DB3F41213E72A300E59BE9 /* VoxosonusModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89DB3F40213E72A300E59BE9 /* VoxosonusModel.mlmodel */; };
 		A243F3B874D485026C915C38 /* Pods_Voxosonus_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D1B5E7286A651B2DA2BECD9 /* Pods_Voxosonus_Example.framework */; };
 		C01CB975AA47A9217F8A8BAF /* Pods_Voxosonus_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC9E4ECE293E1858270744D /* Pods_Voxosonus_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		78A57D21DB4767A9BCCEB165 /* Pods-Voxosonus_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxosonus_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voxosonus_Tests/Pods-Voxosonus_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AC9E4ECE293E1858270744D /* Pods_Voxosonus_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxosonus_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		899BD3A217A3F356992B4236 /* Pods-Voxosonus_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxosonus_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Voxosonus_Example/Pods-Voxosonus_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		89DB3F40213E72A300E59BE9 /* VoxosonusModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VoxosonusModel.mlmodel; sourceTree = "<group>"; };
 		8D1B5E7286A651B2DA2BECD9 /* Pods_Voxosonus_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Voxosonus_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C347C124E52F2C00823F4EBE /* Pods-Voxosonus_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Voxosonus_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Voxosonus_Example/Pods-Voxosonus_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F167B049E0A50B4BAB918D9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		607FACD21AFB9204008FA782 /* Example for Voxosonus */ = {
 			isa = PBXGroup;
 			children = (
+				89DB3F3F213E728A00E59BE9 /* model */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -157,6 +160,14 @@
 				407FEAF6EBF97F04D07D376A /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		89DB3F3F213E728A00E59BE9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				89DB3F40213E72A300E59BE9 /* VoxosonusModel.mlmodel */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				89DB3F41213E72A300E59BE9 /* VoxosonusModel.mlmodel in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
