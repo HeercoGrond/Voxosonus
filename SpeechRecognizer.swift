@@ -7,7 +7,6 @@
 import Foundation
 import Speech
 
-@available(iOS 11.0, *)
 class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
     
     private static var sharedSonusSpeechRecognizer: SpeechRecognizer = {
@@ -20,17 +19,24 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         return sharedSonusSpeechRecognizer
     }
     
-    private let _speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: "en-US"));
+    private var _speechRecognizer: SFSpeechRecognizer!
     
     private var _recognitionRequest : SFSpeechAudioBufferRecognitionRequest?
     private var _recognitionTask: SFSpeechRecognitionTask?
     private let _audioEngine = AVAudioEngine()
     private var _voiceReady: Bool = false
+    private let _defaultIdentifier = "en-US"
     
     private var _deadline: Int = 4; // Deadline timer in seconds.
     
     override init() {
         super.init()
+        
+        changeIdentifier(_defaultIdentifier)
+    }
+    
+    func changeIdentifier(_ identifier: String) {
+        _speechRecognizer = SFSpeechRecognizer(locale: Locale.init(identifier: identifier))
         
         _speechRecognizer?.delegate = self;
         

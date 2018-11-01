@@ -7,8 +7,9 @@
 import Foundation
 import CoreML
 
-@available(iOS 11.0, *)
 class LanguageAnalyzer: NSObject {
+    
+    weak var delegate: LanguageAnalyzerDelegate!
     
     // Creation of shared instance for use.
     private static var sharedLanguageAnalyzer: LanguageAnalyzer = {
@@ -23,41 +24,49 @@ class LanguageAnalyzer: NSObject {
     }
     
     // Variables
-    private let _tagger: NSLinguisticTagger = NSLinguisticTagger(tagSchemes: [.lexicalClass, .lemma], options: 0)
-    
-    private var _wordDictionary : [String : String] = [:]
+    var model = VoxosonusMLModel()
+    var _tagDictionary: [String] = []
     
     override init (){
         super.init()
     }
     
+    func addTag(_ tag: String){
+        if(!_tagDictionary.contains(tag)){
+            _tagDictionary.append(tag);
+        }
+    }
+    
+    func addTags(_ tags: [String]){
+        for tag in tags {
+            addTag(tag)
+        }
+    }
+    
+    func removeTag(_ tag: String){
+        _tagDictionary = _tagDictionary.filter { $0 != tag }
+    }
+    
+    func removeTags(_ tags: [String]){
+        for tag in tags {
+            removeTag(tag)
+        }
+    }
+    
     func analyze(_ sentence: String) {
-        print(sentence)
-        _wordDictionary = [:]
-        _tagger.string = sentence
-        let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .omitOther, .joinNames];
-        let range = NSRange(location: 0, length: sentence.utf16.count)
-        
-        var lemmaArray: [String] = [];
-        _tagger.enumerateTags(in: range, unit: .word, scheme: .lemma, options: options) { tag, tokenRange, stop in
-            if let lemma = tag?.rawValue {
-                lemmaArray.append(lemma)
+        let input = VoxosonusMLModelInput(text: sentence)
+
+        do {
+            let modelPrediction = try model.prediction(input: input)
+            let predictedLabel = modelPrediction.label
+            
+            
+            if(_tagDictionary.contains(predictedLabel)){
+                delegate.labelFound(predictedLabel)
             }
+        } catch {
+            print(error)
         }
-        
-        _tagger.string = sentence
-        var lexicalArray: [String] = []
-        _tagger.enumerateTags(in: range, unit: .word, scheme: .lexicalClass, options: options) {tag, tokenRange, stop in
-            if let lexical = tag?.rawValue {
-                lexicalArray.append(lexical)
-            }
-        }
-        
-        for index in 0..<lemmaArray.count {
-            _wordDictionary.updateValue(lexicalArray[index], forKey: lemmaArray[index])
-        }
-        
-        print(_wordDictionary)
     }
     
     func debug() {
@@ -65,3 +74,7 @@ class LanguageAnalyzer: NSObject {
     }
 }
 
+protocol LanguageAnalyzerDelegate: class {
+    func labelFound(_ label: String)
+    func labelsFound(_ labels: [String])
+}

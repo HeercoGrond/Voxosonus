@@ -8,22 +8,66 @@
 import Foundation
 import CoreML
 
-@available(iOS 11.0, *)
-class Voxosonus: NSObject {
+
+public class Voxosonus {
     
     private var _speechRecognizer: SpeechRecognizer = SpeechRecognizer.sharedInstance()
+    private var _languageAnalyzer: LanguageAnalyzer = LanguageAnalyzer.sharedInstance()
+    private var _debug: Bool = false;
     
-    
-    override init(){
-        super.init()
+    init(){
+        print("Voxosonus Loaded and initialized.")
+        
+        _languageAnalyzer.debug()
     }
     
+    // Public facing functionality.
+    public func listenFor(tag: String) {
+        _languageAnalyzer.addTag(tag)
+        listen()
+    }
+    
+    public func listenFor(tags: [String]) {
+        _languageAnalyzer.addTags(tags)
+        listen()
+    }
+    
+    public func subscribeTag(tag: String){
+        _languageAnalyzer.addTag(tag)
+    }
+    
+    public func subscribeTags(tags: [String]){
+        _languageAnalyzer.addTags(tags)
+    }
+    
+    public func removeTag(tag: String){
+        _languageAnalyzer.removeTag(tag)
+    }
+    
+    public func removeTags(tags: [String]){
+        _languageAnalyzer.removeTags(tags)
+    }
+    
+    public func isReady() -> Bool {
+        return _speechRecognizer.isVoiceReady()
+    }
+    
+    public func changeIdentifier(identifier: String){
+        _speechRecognizer.changeIdentifier(identifier)
+    }
+    
+    public func setListenTime(deadlineTimer: Int) {
+        _speechRecognizer.setListenTime(time: deadlineTimer)
+    }
+    
+    
+    // Private functions
     func speechRecognizer() -> SpeechRecognizer {
         return self._speechRecognizer
     }
     
-    func listenFor(_ tag: String) {
-        
+    func listen() {
+        _speechRecognizer.recordAndRecognizeSpeech()
     }
     
 }
