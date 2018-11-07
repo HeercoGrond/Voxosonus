@@ -9,18 +9,20 @@ import Speech
 
 class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
     
+    /** Setting up a singleton of the SpeechRecognizer to prevent multiple calls to the Speech framework.*/
     private static var sharedSonusSpeechRecognizer: SpeechRecognizer = {
         let sonusSpeechRecognizer = SpeechRecognizer()
         
         return sonusSpeechRecognizer
     }()
     
+    /** Share the singleton instance of the SpeechRecognizer */
     class func sharedInstance() -> SpeechRecognizer {
         return sharedSonusSpeechRecognizer
     }
     
+    // Variables.
     private var _speechRecognizer: SFSpeechRecognizer!
-    
     private var _recognitionRequest : SFSpeechAudioBufferRecognitionRequest?
     private var _recognitionTask: SFSpeechRecognitionTask?
     private let _audioEngine = AVAudioEngine()
@@ -65,14 +67,17 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         }
     }
     
+    /** Verify whether or not the voice authorization is true and signifies that the Speech framework is ready.*/
     func isVoiceReady() -> Bool {
         return self._voiceReady
     }
     
+    /** Change the deadline time for stopping the listening operation.*/
     func setListenTime(time: Int) {
         self._deadline = time
     }
     
+    /** Records the speech and sends it over to the LanguageAnalyzer to be recognized and analyzed.*/
     func recordAndRecognizeSpeech() {
         _recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         var stringToAnalyze = "";
