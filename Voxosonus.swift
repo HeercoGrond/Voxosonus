@@ -24,7 +24,7 @@ public class Voxosonus: LanguageAnalyzerDelegate {
     
     public init(){
         print("Voxosonus Loaded and initialized.")
-        
+        _speechRecognizer.isVoiceReady()
         _languageAnalyzer.delegate = self
     }
     
@@ -107,10 +107,6 @@ public class Voxosonus: LanguageAnalyzerDelegate {
     }
     
     // Private functions
-    func speechRecognizer() -> SpeechRecognizer {
-        return self._speechRecognizer
-    }
-    
     func listen() {
         _speechRecognizer.recordAndRecognizeSpeech()
     }
