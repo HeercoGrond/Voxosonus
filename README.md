@@ -2,7 +2,7 @@
 
 ## Requirements
 
-This framework will only run on iOS 11.x devices. Beware before you use this pod.
+This framework will only run on iOS 11.x devices. Beware before you use this framework.
 
 ## Author
 

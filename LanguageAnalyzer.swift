@@ -60,17 +60,21 @@ class LanguageAnalyzer: NSObject {
     
     /** Analyzes the input sentence through the Model. If a label is returned that is recognized within the tags subscribed, will call the labelfound function on the delegate.*/
     func analyze(_ sentence: String) {
+        print("Starting analysis of " + sentence)
         let input = VoxosonusMLModelInput(text: sentence)
 
         do {
+            print("Starting prediction")
             let modelPrediction = try model.prediction(input: input)
             let predictedLabel = modelPrediction.label
             
-            
+            print("Prediction label is " + predictedLabel)
             if(_tagDictionary.contains(predictedLabel)){
+                print("Casting to the delegate")
                 delegate.labelFound(predictedLabel)
             }
         } catch {
+            print("Encountered an error")
             print(error)
         }
     }

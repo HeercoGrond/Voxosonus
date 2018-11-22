@@ -79,6 +79,7 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
     
     /** Records the speech and sends it over to the LanguageAnalyzer to be recognized and analyzed.*/
     func recordAndRecognizeSpeech() {
+        print("Starting recording");
         _recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         var stringToAnalyze = "";
         let node = _audioEngine.inputNode
@@ -91,6 +92,7 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         do {
             try _audioEngine.start()
         } catch {
+            print("Something went wrong with the starting of the audio engine:")
             return print(error)
         }
         
@@ -108,6 +110,7 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
                 stringToAnalyze = beststring
                 
             } else if let error = error {
+                print("Found an error in the attempt to do a recognition task:")
                 print(error)
             }
         })

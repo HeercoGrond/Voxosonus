@@ -22,7 +22,7 @@ public class Voxosonus: LanguageAnalyzerDelegate {
     private var _languageAnalyzer: LanguageAnalyzer = LanguageAnalyzer.sharedInstance()
     private var _debug: Bool = false;
     
-    init(){
+    public init(){
         print("Voxosonus Loaded and initialized.")
         
         _languageAnalyzer.delegate = self
@@ -93,6 +93,17 @@ public class Voxosonus: LanguageAnalyzerDelegate {
      */
     public func setListenTime(deadlineTimer: Int) {
         _speechRecognizer.setListenTime(time: deadlineTimer)
+    }
+    
+    /**
+     Analyze existing sentence, in case voice recognition is not needed. Make sure you have subscribed tags or this will simply not output anything since it'll have no tags to compare to.
+    */
+    public func analyze(sentence: String) {
+        _languageAnalyzer.analyze(sentence)
+    }
+    
+    public func startListening() {
+        listen();
     }
     
     // Private functions
