@@ -24,7 +24,6 @@ public class Voxosonus: LanguageAnalyzerDelegate {
     
     public init(){
         print("Voxosonus Loaded and initialized.")
-        _speechRecognizer.isVoiceReady()
         _languageAnalyzer.delegate = self
     }
     
@@ -102,8 +101,19 @@ public class Voxosonus: LanguageAnalyzerDelegate {
         _languageAnalyzer.analyze(sentence)
     }
     
+    /**
+     Start speech recognition. This will not return anything if there are no subscribed tags.
+     */
     public func startListening() {
         listen();
+    }
+    
+    /**
+     Clean all subscribed tags in the LanguageAnalyzer.
+     */
+    
+    public func cleanTags(){
+        _languageAnalyzer.cleanTags()
     }
     
     // Private functions

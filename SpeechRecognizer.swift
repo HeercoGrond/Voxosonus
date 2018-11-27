@@ -107,7 +107,7 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         _recognitionTask = _speechRecognizer?.recognitionTask(with: _recognitionRequest!, resultHandler: {result, error in
             if let result = result {
                 let beststring = result.bestTranscription.formattedString
-                stringToAnalyze = beststring
+                stringToAnalyze = beststring.lowercased()
                 
             } else if let error = error {
                 print("Found an error in the attempt to do a recognition task:")

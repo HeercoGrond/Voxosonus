@@ -58,6 +58,10 @@ class LanguageAnalyzer: NSObject {
         }
     }
     
+    func cleanTags(){
+        _tagDictionary = []
+    }
+    
     /** Analyzes the input sentence through the Model. If a label is returned that is recognized within the tags subscribed, will call the labelfound function on the delegate.*/
     func analyze(_ sentence: String) {
         print("Starting analysis of " + sentence)
@@ -72,6 +76,9 @@ class LanguageAnalyzer: NSObject {
             if(_tagDictionary.contains(predictedLabel)){
                 print("Casting to the delegate")
                 delegate.labelFound(predictedLabel)
+            } else {
+                print("The label found was not subscribed")
+                delegate.labelFound("undefined") //Return undefined. There is an argument to be made that perhaps this should return either nothing or should trigger something else in the delegate. This seems to be the simpler solution.
             }
         } catch {
             print("Encountered an error")
