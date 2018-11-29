@@ -1,9 +1,18 @@
 import Foundation
 import CreateML
 
-
 // Input the name of the file you have imported into the resources of the playground.
-let datasetName = ""
+// Note: The expected dataset is to be in pairs of objects constructed as such:
+// {
+//  label: "",
+//  text: "",
+// }
+// This is because the MLTextClassifier does not support embedded arrays.
+let datasetName = "dataset"
+
+// Change this if you wish to use other definitions for the properties of the objects. These are default
+let datasetLabelName = "label"
+let datasetTextName = "text"
 
 // The model's author name for the metadata.
 let author = "Voxosonus"
@@ -13,8 +22,6 @@ let description = "A MLModel Generated using the tools of the Voxosonus Framewor
 let version = "1.0"
 
 
-
-
 // Get the current path to the document directory.
 let dirs = NSSearchPathForDirectoriesInDomains(.documentDirectory,
                                                .userDomainMask, true)
@@ -22,9 +29,9 @@ let dirs = NSSearchPathForDirectoriesInDomains(.documentDirectory,
 let currentDir = dirs[0] + "/VoxosonusModels/"
 let path = URL(fileURLWithPath: currentDir)
 
-let data = try MLDataTable(contentsOf: Bundle.main.url(forResource: "dataset", withExtension: "json")!)
+let data = try MLDataTable(contentsOf: Bundle.main.url(forResource: datasetName, withExtension: "json")!)
 let (trainingData, testingData) = data.randomSplit(by: 0.7, seed: 5)
-let classifier = try MLTextClassifier(trainingData: trainingData, textColumn: "text", labelColumn: "label")
+let classifier = try MLTextClassifier(trainingData: trainingData, textColumn: datasetTextName, labelColumn: datasetLabelName)
 
 let trainingAccuracy = (1.0 - classifier.trainingMetrics.classificationError) * 100;
 let validationAccuracy = (1.0 - classifier.validationMetrics.classificationError) * 100;
