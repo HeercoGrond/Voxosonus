@@ -26,6 +26,10 @@ In order to utilize the framework as is with the dataset provided within the fra
 
 If you are only interested in the provided version of the framework, see the `Framework` folder. This will for now only be the built version for x64 iPhones.
 
+## Implementation
+
+The below code is a simple Swift 4.2 implementation on an iOS 12.0 device as shown in the VoxosonusExampleApp added to this project.
+
 ```
 import UIKit
 import Voxosonus
