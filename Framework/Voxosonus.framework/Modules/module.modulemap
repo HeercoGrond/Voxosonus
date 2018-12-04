@@ -1,0 +1,11 @@
+framework module Voxosonus {
+  umbrella header "Voxosonus.h"
+
+  export *
+  module * { export * }
+}
+
+module Voxosonus.Swift {
+    header "Voxosonus-Swift.h"
+    requires objc
+}
