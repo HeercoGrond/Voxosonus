@@ -22,6 +22,8 @@ The base of the framework is built for iOS 11.x devices. This means that in orde
 
 In order to utilize the framework as is with the dataset provided within the framework (as detailed in the `dataset.json,` which is a filtered version of the `WatsonConversationCarWorkspace.json` ) you will need to copy the built version of the framework into your folder and add it to your project alongside defining it as one of the embedded libraries as shown below. 
 
+![Adding the project](./WikiImages/embed.png)
+
 If you are only interested in the provided version of the framework, see the `Framework` folder. This will for now only be the built version for x64 iPhones.
 
 ```
