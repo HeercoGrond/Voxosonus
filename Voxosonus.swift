@@ -102,7 +102,7 @@ public class Voxosonus: LanguageAnalyzerDelegate {
     }
     
     /**
-     Start speech recognition. This will not return anything if there are no subscribed tags.
+     Start speech recognition. 
      */
     public func startListening() {
         listen();
