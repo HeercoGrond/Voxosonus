@@ -16,17 +16,25 @@
 		<data>
 		xHkfiLS/HtkH+UvUd5OXws8hcUM=
 		</data>
+		<key>LICENSE</key>
+		<data>
+		fvCDvCxy8JZpI5+l6p+b3AE+buQ=
+		</data>
 		<key>Modules/Voxosonus.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		QH8OMDJqmHwKsifqHUDbceYS4aI=
+		iAwQwAVFgwoWw75Al3wB8g4Xcz4=
 		</data>
 		<key>Modules/Voxosonus.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		v6BQwynDRPPIljg8Ekt6jCpKjcA=
+		R47Na62I6IWJK0N9Yeivv2DH8K8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		JC65n+MYRtuw/c2lL1AV+B75WW0=
+		</data>
+		<key>README.md</key>
+		<data>
+		xQPIvkqB3G0BpSL5x27teBtwjH4=
 		</data>
 		<key>VoxosonusMLModel.mlmodelc/coremldata.bin</key>
 		<data>
@@ -34,31 +42,55 @@
 		</data>
 		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/Contents.swift</key>
 		<data>
-		0bnzRSNSXZ18qMsjiF1LfeF7KT0=
+		FFWhpoaRyLmBcZQ2SvguqrH4ye0=
+		</data>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/Resources/dataset.json</key>
+		<data>
+		o1usnzkscs1ea0EcNQno0F2sKyI=
 		</data>
 		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/contents.xcplayground</key>
 		<data>
 		FgvT4qBwR+MNm14lX2Mn4WxbmH8=
 		</data>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/playground.xcworkspace/contents.xcworkspacedata</key>
+		<data>
+		hCQ4SPVLDFmD4e0m3vtB0mLOE1Q=
+		</data>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/playground.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist</key>
+		<data>
+		31/nObizq2nPGjKoiBxIoWYuA0A=
+		</data>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/playground.xcworkspace/xcuserdata/heercogrond.xcuserdatad/UserInterfaceState.xcuserstate</key>
+		<data>
+		/s78NhT3z0O/4IfdLcXBOEG2pNE=
+		</data>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/timeline.xctimeline</key>
+		<data>
+		wjW6EWa60oSzaLw7NfTVdAKOTJk=
+		</data>
 		<key>VoxosonusMLSuite/FilterLabeledData.playground/Contents.swift</key>
 		<data>
-		0bnzRSNSXZ18qMsjiF1LfeF7KT0=
+		vGXL4UD8Cs+VtSDIzVmjF65H26M=
+		</data>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/Resources/dataset.json</key>
+		<data>
+		SecfAJu1rlTw79AdZduxbB15QJE=
 		</data>
 		<key>VoxosonusMLSuite/FilterLabeledData.playground/contents.xcplayground</key>
 		<data>
 		FgvT4qBwR+MNm14lX2Mn4WxbmH8=
 		</data>
-		<key>VoxosonusMLSuite/VoxosonusModelGenerator.playground/Contents.swift</key>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/playground.xcworkspace/contents.xcworkspacedata</key>
 		<data>
-		plV/ZEZ97Hqb6MCxumZIdmx0sY8=
+		hCQ4SPVLDFmD4e0m3vtB0mLOE1Q=
 		</data>
-		<key>VoxosonusMLSuite/VoxosonusModelGenerator.playground/contents.xcplayground</key>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/playground.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist</key>
 		<data>
-		dJD56g3f5XSakslKV3j/W13kyuE=
+		31/nObizq2nPGjKoiBxIoWYuA0A=
 		</data>
-		<key>VoxosonusMLSuite/VoxosonusModelGenerator.playground/timeline.xctimeline</key>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/playground.xcworkspace/xcuserdata/heercogrond.xcuserdatad/UserInterfaceState.xcuserstate</key>
 		<data>
-		wjW6EWa60oSzaLw7NfTVdAKOTJk=
+		2fmo1BJtn4MwD9eN+MjTfRPCQ2o=
 		</data>
 		<key>VoxosonusMLSuite/WatsonConversationCarWorkspace.json</key>
 		<data>
@@ -85,18 +117,25 @@
 			gK5AuPCVF4txVjTptott8oZgXvr2LsBmkRTGwZfwBH4=
 			</data>
 		</dict>
+		<key>LICENSE</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TkWSg7ntvXWMeBalUabcK6JupyU8YaMGPh6AY/+IYFw=
+			</data>
+		</dict>
 		<key>Modules/Voxosonus.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TVas/n9xmikJ7tPEBI9IhltkDJPvq/OweHt1SoutpeU=
+			TEqkYuDPPfZW7JqvWylRUlm8xN9xCfBBAQZpS+LYisM=
 			</data>
 		</dict>
 		<key>Modules/Voxosonus.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gq6iz9mtorktUu5jL9u/75t546loFeDNpJp4iM+TftI=
+			bOyLtObui5oQAVcguKpyQFQAdFkO+l68GMCBy/BmNVQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -104,6 +143,13 @@
 			<key>hash2</key>
 			<data>
 			ykDk0CErxlRWPp6Ik79wGEjgdkgImlIFBr6tznv0DfA=
+			</data>
+		</dict>
+		<key>README.md</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y+kTSjxFQHeyVZUff0GIE3+SJLMKUBuHfxEyyEDvqLc=
 			</data>
 		</dict>
 		<key>VoxosonusMLModel.mlmodelc/coremldata.bin</key>
@@ -117,7 +163,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHLD5+haQQb6Yhs58y9iIH1dLY4BKqvEeYUTXDuksq0=
+			GMq5ix4is7v9vxvuSuMK95lmF3ofuumW9IeJuWx4w2U=
+			</data>
+		</dict>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/Resources/dataset.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CZ5AttByU1mMjUqmoszbwKwDEIrklw1G6tIsFLoIvcY=
 			</data>
 		</dict>
 		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/contents.xcplayground</key>
@@ -127,11 +180,46 @@
 			2gLKv0A41y7VPrCaeupJrR8EcUiMmSVh+Thw7W1QHLk=
 			</data>
 		</dict>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/playground.xcworkspace/contents.xcworkspacedata</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fzsAtcP9tFJC17h+HlxOJdH6gSmhbJQpXsxOjqIjXF8=
+			</data>
+		</dict>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/playground.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			36D5u4W5XMupxoEa2t+MtAf7XVIIjonbg+vDCOxEhUI=
+			</data>
+		</dict>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/playground.xcworkspace/xcuserdata/heercogrond.xcuserdatad/UserInterfaceState.xcuserstate</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9Vdf6FUIQKtvXFNjoWLq+OM666BLg1aaAxCKLLpMHsY=
+			</data>
+		</dict>
+		<key>VoxosonusMLSuite/CreateVoxosonusModel.playground/timeline.xctimeline</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RltDYtdpahQBWph0xds90OuU0Gcihptj6ZRDA2SHBQM=
+			</data>
+		</dict>
 		<key>VoxosonusMLSuite/FilterLabeledData.playground/Contents.swift</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wHLD5+haQQb6Yhs58y9iIH1dLY4BKqvEeYUTXDuksq0=
+			ezKOzjJuPGJiv93v9oaTxQjQO1/rRRsBVgshog6WcS4=
+			</data>
+		</dict>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/Resources/dataset.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k+qVOD6BmE3cN/uIje27qOxH9HT/HrvcRpRafSkxaVU=
 			</data>
 		</dict>
 		<key>VoxosonusMLSuite/FilterLabeledData.playground/contents.xcplayground</key>
@@ -141,25 +229,25 @@
 			2gLKv0A41y7VPrCaeupJrR8EcUiMmSVh+Thw7W1QHLk=
 			</data>
 		</dict>
-		<key>VoxosonusMLSuite/VoxosonusModelGenerator.playground/Contents.swift</key>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/playground.xcworkspace/contents.xcworkspacedata</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			poNVd1JSbE8uipFQGmdyH3Z0d8uHh9ODeK4DK6L17/M=
+			fzsAtcP9tFJC17h+HlxOJdH6gSmhbJQpXsxOjqIjXF8=
 			</data>
 		</dict>
-		<key>VoxosonusMLSuite/VoxosonusModelGenerator.playground/contents.xcplayground</key>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/playground.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sGjwnviGNbEgPLmxMp8vaddW4N0OOfmpSTFO2fvqXOE=
+			36D5u4W5XMupxoEa2t+MtAf7XVIIjonbg+vDCOxEhUI=
 			</data>
 		</dict>
-		<key>VoxosonusMLSuite/VoxosonusModelGenerator.playground/timeline.xctimeline</key>
+		<key>VoxosonusMLSuite/FilterLabeledData.playground/playground.xcworkspace/xcuserdata/heercogrond.xcuserdatad/UserInterfaceState.xcuserstate</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RltDYtdpahQBWph0xds90OuU0Gcihptj6ZRDA2SHBQM=
+			Pf/yzfi5lPnWr7CiP5N8EpdwgYzvpqmpqPpXL5+dDsE=
 			</data>
 		</dict>
 		<key>VoxosonusMLSuite/WatsonConversationCarWorkspace.json</key>
