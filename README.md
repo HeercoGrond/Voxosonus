@@ -1,4 +1,4 @@
-# Voxosonus
+# ![Voxosonus Logo](./WikiImages/Voxosonus_Full.png)
 
 ## Requirements
 
