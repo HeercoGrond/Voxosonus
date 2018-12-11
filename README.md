@@ -30,7 +30,7 @@ If you are only interested in the provided version of the framework, see the `Fr
 
 The below code is a simple Swift 4.2 implementation on an iOS 12.0 device as shown in the VoxosonusExampleApp added to this project.
 
-```
+```swift
 import UIKit
 import Voxosonus
 
