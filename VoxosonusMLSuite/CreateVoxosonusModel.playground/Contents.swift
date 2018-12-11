@@ -27,7 +27,7 @@ let dirs = NSSearchPathForDirectoriesInDomains(.documentDirectory,
                                                .userDomainMask, true)
 // And createa folder to save the model to.
 let currentDir = dirs[0] + "/VoxosonusModels/"
-let path = URL(fileURLWithPath: currentDir)
+let path = URL(fileURLWithPath: currentDir + "VoxosonusMLModel.mlmodel")
 
 let data = try MLDataTable(contentsOf: Bundle.main.url(forResource: datasetName, withExtension: "json")!)
 let (trainingData, testingData) = data.randomSplit(by: 0.7, seed: 5)
