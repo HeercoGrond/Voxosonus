@@ -23,8 +23,8 @@
 		89BEB98521B691C700C70ADA /* VoxosonusMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VoxosonusMLModel.mlmodel; sourceTree = SOURCE_ROOT; };
 		89BEB98621B691C700C70ADA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		89BEB98721B691C700C70ADA /* Voxosonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voxosonus.h; sourceTree = SOURCE_ROOT; };
-		89BEB98C21B693F000C70ADA /* Voxosonus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voxosonus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BEB98D21BFCE0C00C70ADA /* MachineLearningTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MachineLearningTools; sourceTree = SOURCE_ROOT; };
+		89BEB99321BFD1E900C70ADA /* Voxosonus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voxosonus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				899694552187277400F9A052 /* Voxosonus */,
-				89BEB98C21B693F000C70ADA /* Voxosonus.framework */,
+				89BEB99321BFD1E900C70ADA /* Voxosonus.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,7 +91,7 @@
 			);
 			name = Voxosonus;
 			productName = Voxosonus;
-			productReference = 89BEB98C21B693F000C70ADA /* Voxosonus.framework */;
+			productReference = 89BEB99321BFD1E900C70ADA /* Voxosonus.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -294,7 +294,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.Voxosonus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,7 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.Voxosonus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
