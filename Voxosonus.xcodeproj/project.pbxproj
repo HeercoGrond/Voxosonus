@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		89BEB97F21B6913900C70ADA /* LanguageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97921B6913900C70ADA /* LanguageAnalyzer.swift */; };
 		89BEB98021B6913900C70ADA /* Voxosonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97A21B6913900C70ADA /* Voxosonus.swift */; };
-		89BEB98121B6913900C70ADA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 89BEB97B21B6913900C70ADA /* README.md */; };
-		89BEB98221B6913900C70ADA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 89BEB97C21B6913900C70ADA /* LICENSE */; };
 		89BEB98321B6913900C70ADA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */; };
-		89BEB98421B6913900C70ADA /* VoxosonusMLSuite in Resources */ = {isa = PBXBuildFile; fileRef = 89BEB97E21B6913900C70ADA /* VoxosonusMLSuite */; };
 		89BEB98821B691C800C70ADA /* VoxosonusMLModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB98521B691C700C70ADA /* VoxosonusMLModel.mlmodel */; };
 		89BEB98A21B691C800C70ADA /* Voxosonus.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BEB98721B691C700C70ADA /* Voxosonus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -23,11 +20,11 @@
 		89BEB97B21B6913900C70ADA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		89BEB97C21B6913900C70ADA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = SOURCE_ROOT; };
-		89BEB97E21B6913900C70ADA /* VoxosonusMLSuite */ = {isa = PBXFileReference; lastKnownFileType = folder; path = VoxosonusMLSuite; sourceTree = SOURCE_ROOT; };
 		89BEB98521B691C700C70ADA /* VoxosonusMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VoxosonusMLModel.mlmodel; sourceTree = SOURCE_ROOT; };
 		89BEB98621B691C700C70ADA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		89BEB98721B691C700C70ADA /* Voxosonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voxosonus.h; sourceTree = SOURCE_ROOT; };
 		89BEB98C21B693F000C70ADA /* Voxosonus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voxosonus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BEB98D21BFCE0C00C70ADA /* MachineLearningTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MachineLearningTools; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +49,7 @@
 		899694552187277400F9A052 /* Voxosonus */ = {
 			isa = PBXGroup;
 			children = (
+				89BEB98D21BFCE0C00C70ADA /* MachineLearningTools */,
 				89BEB98621B691C700C70ADA /* Info.plist */,
 				89BEB98721B691C700C70ADA /* Voxosonus.h */,
 				89BEB98521B691C700C70ADA /* VoxosonusMLModel.mlmodel */,
@@ -60,7 +58,6 @@
 				89BEB97B21B6913900C70ADA /* README.md */,
 				89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */,
 				89BEB97A21B6913900C70ADA /* Voxosonus.swift */,
-				89BEB97E21B6913900C70ADA /* VoxosonusMLSuite */,
 			);
 			path = Voxosonus;
 			sourceTree = "<group>";
@@ -134,9 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BEB98221B6913900C70ADA /* LICENSE in Resources */,
-				89BEB98121B6913900C70ADA /* README.md in Resources */,
-				89BEB98421B6913900C70ADA /* VoxosonusMLSuite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
