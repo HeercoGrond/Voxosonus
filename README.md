@@ -1,5 +1,7 @@
 # ![Voxosonus Logo](./WikiImages/Voxosonus_Full.png)
 
+![Travis CI](https://travis-ci.org/HeercoGrond/Voxosonus.svg?branch=master)
+
 ## Requirements
 
 This framework will only run on iOS 11.x devices because of the usage of the CoreML model. Beware before you use this framework.
