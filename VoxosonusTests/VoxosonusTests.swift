@@ -7,27 +7,53 @@
 //
 
 import XCTest
+import Voxosonus
 
-class VoxosonusTests: XCTestCase {
-
+class VoxosonusTests: XCTestCase, VoxosonusDelegate {
+    
+    let model = Voxosonus()
+    var stage: Int = 0;
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+       model.delegate = self
+    }
+    
+    func testAddTags(){
+        let tags: [Tag] = [Tag(tagname: "capabilities"), Tag(tagname: "about_VA"), Tag(tagname: "system_reliance")]
+        
+        model.subscribeTags(tags: tags)
+        
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testCleanTags(){
+        model.cleanTags()
+    }
+    
+    func testEmptyTags(){
+        model.analyze(sentence: "do you tell the truth")
+        model.analyze(sentence: "what is my speed")
+        model.analyze(sentence: "what's your name?")
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSubscribedTags(){
+        stage = 2
+        
+        let tags: [Tag] = [Tag(tagname: "capabilities"), Tag(tagname: "about_VA"), Tag(tagname: "system_reliance")]
+        
+        model.subscribeTag(tag: tags[0])
+        model.subscribeTag(tag: tags[1])
+        model.subscribeTag(tag: tags[2])
+        
+        model.analyze(sentence: "do you tell the truth")
+        model.analyze(sentence: "what is my speed")
+        model.analyze(sentence: "what's your name?")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func labelFound(label: Tag) {
+        if(stage == 1){
+            XCTAssertTrue(label.value == "undefined")
+        } else if (stage == 2){
+            XCTAssertFalse(label.value == "undefined")
         }
     }
-
 }

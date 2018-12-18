@@ -9,7 +9,7 @@ import Foundation
 import CoreML
 
 /**
- The Voxosonus class is the accesable part of the Voxosonus Framework through which the functionality can be used. In order to use the framework properly, a class with the LanguageAnalyzerDelegate protocol implemented must be defined and assigned.
+ The Voxosonus class is the accesable part of the Voxosonus Framework through which the functionality can be used. In order to use the framework properly, a class with the VoxosonusDelegate protocol implemented must be defined and assigned.
  */
 public class Voxosonus: LanguageAnalyzerDelegate {
     
@@ -30,52 +30,49 @@ public class Voxosonus: LanguageAnalyzerDelegate {
     // Public facing functionality.
     
     /**
-     Subscribes a tag to the LanguageAnalyzer and activates speech recognition.
+     Subscribes a Tag to the LanguageAnalyzer and activates speech recognition.
     */
-    public func listenFor(tag: String) {
+    public func listenFor(tag: Tag) {
         _languageAnalyzer.addTag(tag)
         listen()
     }
     
     /**
-     Subscribes multiple tags to the LanguageAnalyzer and activates speech recognition.
+     Subscribes multiple Tags to the LanguageAnalyzer and activates speech recognition.
      */
-    public func listenFor(tags: [String]) {
+    public func listenFor(tags: [Tag]) {
         _languageAnalyzer.addTags(tags)
         listen()
     }
     
     /**
-     Subscribes a tag to the LanguageAnalyzer
+     Subscribes a Tag to the LanguageAnalyzer
     */
-    public func subscribeTag(tag: String){
+    public func subscribeTag(tag: Tag){
         _languageAnalyzer.addTag(tag)
     }
     
     /**
-     Subscribes multiple tags to the LanguageAnalyzer
+     Subscribes multiple Tags to the LanguageAnalyzer
      */
-    public func subscribeTags(tags: [String]){
+    public func subscribeTags(tags: [Tag]){
         _languageAnalyzer.addTags(tags)
     }
     
     /**
-     Removes a tag from the subscribed tags in the LanguageAnalyzer
+     Removes a Tag from the subscribed Tags in the LanguageAnalyzer
      */
-    public func removeTag(tag: String){
+    public func removeTag(tag: Tag){
         _languageAnalyzer.removeTag(tag)
     }
     
     /**
-     Removes multiple tags from the subscribed tags in the LanguageAnalyzer
+     Removes multiple Tags from the subscribed Tags in the LanguageAnalyzer
     */
-    public func removeTags(tags: [String]){
+    public func removeTags(tags: [Tag]){
         _languageAnalyzer.removeTags(tags)
     }
     
-    /**
-     Verify whether or not the SpeechRecognizer is ready to activate.
-     */
     public func isReady() -> Bool {
         return _speechRecognizer.isVoiceReady()
     }
@@ -101,17 +98,13 @@ public class Voxosonus: LanguageAnalyzerDelegate {
         _languageAnalyzer.analyze(sentence)
     }
     
-    /**
-     Start speech recognition. 
-     */
     public func startListening() {
         listen();
     }
     
     /**
-     Clean all subscribed tags in the LanguageAnalyzer.
+     Clean all subscribed Tags in the LanguageAnalyzer.
      */
-    
     public func cleanTags(){
         _languageAnalyzer.cleanTags()
     }
@@ -121,12 +114,12 @@ public class Voxosonus: LanguageAnalyzerDelegate {
         _speechRecognizer.recordAndRecognizeSpeech()
     }
     
-    func labelFound(_ label: String){
+    func labelFound(_ label: Tag){
         delegate?.labelFound(label: label)
     }
 }
 
-/** Protocol impementing the labelFound function for use in your application once the loop has been completed. Returns a string based label.*/
+/** Protocol impementing the labelFound function for use in your application once the loop has been completed. Returns a Tag based label.*/
 public protocol VoxosonusDelegate: class {
-    func labelFound(label: String)
+    func labelFound(label: Tag)
 }

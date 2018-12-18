@@ -51,14 +51,20 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
                 
             case .denied:
                 voiceAuthorized = false;
+                #if DEBUG
                 print("user didn't give permissions");
+                #endif
             case .restricted:
                 voiceAuthorized = false;
+                #if DEBUG
                 print("not allowed to use speech");
+                #endif
                 
             case .notDetermined:
                 voiceAuthorized = false;
+                #if DEBUG
                 print("not yet said if it's allowed or not");
+                #endif
             }
             
             OperationQueue.main.addOperation {
@@ -67,19 +73,15 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         }
     }
     
-    /** Verify whether or not the voice authorization is true and signifies that the Speech framework is ready.*/
     func isVoiceReady() -> Bool {
         return self._voiceReady
     }
     
-    /** Change the deadline time for stopping the listening operation.*/
     func setListenTime(time: Int) {
         self._deadline = time
     }
     
-    /** Records the speech and sends it over to the LanguageAnalyzer to be recognized and analyzed.*/
     func recordAndRecognizeSpeech() {
-        print("Starting recording");
         _recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
         var stringToAnalyze = "";
         let node = _audioEngine.inputNode
@@ -92,8 +94,10 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
         do {
             try _audioEngine.start()
         } catch {
+            #if DEBUG
             print("Something went wrong with the starting of the audio engine:")
             return print(error)
+            #endif
         }
         
         guard let myRecognizer = SFSpeechRecognizer() else {
@@ -110,8 +114,10 @@ class SpeechRecognizer: NSObject, SFSpeechRecognizerDelegate {
                 stringToAnalyze = beststring.lowercased()
                 
             } else if let error = error {
+                #if DEBUG
                 print("Found an error in the attempt to do a recognition task:")
                 print(error)
+                #endif
             }
         })
         

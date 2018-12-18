@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8936F04521C9055200BA8115 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936F04421C9055200BA8115 /* Tag.swift */; };
+		8936F05721C90DD300BA8115 /* VoxosonusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936F05621C90DD300BA8115 /* VoxosonusTests.swift */; };
+		8936F05921C90DD300BA8115 /* Voxosonus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BEB99321BFD1E900C70ADA /* Voxosonus.framework */; };
 		89BEB97F21B6913900C70ADA /* LanguageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97921B6913900C70ADA /* LanguageAnalyzer.swift */; };
 		89BEB98021B6913900C70ADA /* Voxosonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97A21B6913900C70ADA /* Voxosonus.swift */; };
 		89BEB98321B6913900C70ADA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */; };
@@ -14,7 +17,21 @@
 		89BEB98A21B691C800C70ADA /* Voxosonus.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BEB98721B691C700C70ADA /* Voxosonus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8936F05A21C90DD300BA8115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8996944A2187277400F9A052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899694522187277400F9A052;
+			remoteInfo = Voxosonus;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8936F04421C9055200BA8115 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		8936F05421C90DD300BA8115 /* VoxosonusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxosonusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8936F05621C90DD300BA8115 /* VoxosonusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxosonusTests.swift; sourceTree = "<group>"; };
+		8936F05821C90DD300BA8115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89BEB97921B6913900C70ADA /* LanguageAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageAnalyzer.swift; sourceTree = SOURCE_ROOT; };
 		89BEB97A21B6913900C70ADA /* Voxosonus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voxosonus.swift; sourceTree = SOURCE_ROOT; };
 		89BEB97B21B6913900C70ADA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -28,6 +45,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8936F05121C90DD300BA8115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8936F05921C90DD300BA8115 /* Voxosonus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		899694502187277400F9A052 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,15 +63,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		899694492187277400F9A052 = {
-			isa = PBXGroup;
-			children = (
-				899694552187277400F9A052 /* Voxosonus */,
-				89BEB99321BFD1E900C70ADA /* Voxosonus.framework */,
-			);
-			sourceTree = "<group>";
-		};
-		899694552187277400F9A052 /* Voxosonus */ = {
+		8936F04321C9053400BA8115 /* Voxosonus */ = {
 			isa = PBXGroup;
 			children = (
 				89BEB98D21BFCE0C00C70ADA /* MachineLearningTools */,
@@ -58,8 +75,28 @@
 				89BEB97B21B6913900C70ADA /* README.md */,
 				89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */,
 				89BEB97A21B6913900C70ADA /* Voxosonus.swift */,
+				8936F04421C9055200BA8115 /* Tag.swift */,
 			);
-			path = Voxosonus;
+			name = Voxosonus;
+			sourceTree = "<group>";
+		};
+		8936F05521C90DD300BA8115 /* VoxosonusTests */ = {
+			isa = PBXGroup;
+			children = (
+				8936F05421C90DD300BA8115 /* VoxosonusTests.xctest */,
+				8936F05621C90DD300BA8115 /* VoxosonusTests.swift */,
+				8936F05821C90DD300BA8115 /* Info.plist */,
+			);
+			path = VoxosonusTests;
+			sourceTree = "<group>";
+		};
+		899694492187277400F9A052 = {
+			isa = PBXGroup;
+			children = (
+				8936F04321C9053400BA8115 /* Voxosonus */,
+				8936F05521C90DD300BA8115 /* VoxosonusTests */,
+				89BEB99321BFD1E900C70ADA /* Voxosonus.framework */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,6 +113,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		8936F05321C90DD300BA8115 /* VoxosonusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8936F05C21C90DD300BA8115 /* Build configuration list for PBXNativeTarget "VoxosonusTests" */;
+			buildPhases = (
+				8936F05021C90DD300BA8115 /* Sources */,
+				8936F05121C90DD300BA8115 /* Frameworks */,
+				8936F05221C90DD300BA8115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8936F05B21C90DD300BA8115 /* PBXTargetDependency */,
+			);
+			name = VoxosonusTests;
+			productName = VoxosonusTests;
+			productReference = 8936F05421C90DD300BA8115 /* VoxosonusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		899694522187277400F9A052 /* Voxosonus */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8996945B2187277400F9A052 /* Build configuration list for PBXNativeTarget "Voxosonus" */;
@@ -100,9 +155,13 @@
 		8996944A2187277400F9A052 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Heerco Grond";
 				TargetAttributes = {
+					8936F05321C90DD300BA8115 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					899694522187277400F9A052 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1010;
@@ -122,11 +181,19 @@
 			projectRoot = "";
 			targets = (
 				899694522187277400F9A052 /* Voxosonus */,
+				8936F05321C90DD300BA8115 /* VoxosonusTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8936F05221C90DD300BA8115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		899694512187277400F9A052 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,12 +204,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8936F05021C90DD300BA8115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8936F05721C90DD300BA8115 /* VoxosonusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8996944F2187277400F9A052 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				89BEB98021B6913900C70ADA /* Voxosonus.swift in Sources */,
 				89BEB97F21B6913900C70ADA /* LanguageAnalyzer.swift in Sources */,
+				8936F04521C9055200BA8115 /* Tag.swift in Sources */,
 				89BEB98821B691C800C70ADA /* VoxosonusMLModel.mlmodel in Sources */,
 				89BEB98321B6913900C70ADA /* SpeechRecognizer.swift in Sources */,
 			);
@@ -150,7 +226,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		8936F05B21C90DD300BA8115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 899694522187277400F9A052 /* Voxosonus */;
+			targetProxy = 8936F05A21C90DD300BA8115 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		8936F05D21C90DD300BA8115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUX35HW2S3;
+				INFOPLIST_FILE = VoxosonusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.VoxosonusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8936F05E21C90DD300BA8115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUX35HW2S3;
+				INFOPLIST_FILE = VoxosonusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.VoxosonusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		899694592187277400F9A052 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -331,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8936F05C21C90DD300BA8115 /* Build configuration list for PBXNativeTarget "VoxosonusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8936F05D21C90DD300BA8115 /* Debug */,
+				8936F05E21C90DD300BA8115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8996944D2187277400F9A052 /* Build configuration list for PBXProject "Voxosonus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

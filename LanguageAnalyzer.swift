@@ -26,33 +26,33 @@ class LanguageAnalyzer: NSObject {
     
     // Variables
     var model = VoxosonusMLModel()
-    var _tagDictionary: [String] = []
+    var _tagDictionary: [Tag] = []
     
     override init (){
         super.init()
     }
     
     /** Adds a tag to the dictionary of tags to scan for from the model.*/
-    func addTag(_ tag: String){
-        if(!_tagDictionary.contains(tag)){
+    func addTag(_ tag: Tag){
+        
+        if(!_tagDictionary.contains(where: { $0.value == tag.value } )){
             _tagDictionary.append(tag);
         }
     }
     
     /** Adds each tag from the collection seperately. */
-    func addTags(_ tags: [String]){
+    func addTags(_ tags: [Tag]){
         for tag in tags {
             addTag(tag)
         }
     }
     
-    /** Removes a tag from the dictionary of tags to scan for from the model.*/
-    func removeTag(_ tag: String){
-        _tagDictionary = _tagDictionary.filter { $0 != tag }
+    func removeTag(_ tag: Tag){
+        if let index = _tagDictionary.lastIndex(where: { $0.value == tag.value }){
+            _tagDictionary.remove(at: index)
+        }
     }
-    
-    /** Removes each tag from the collection seperately from the dictionary. */
-    func removeTags(_ tags: [String]){
+    func removeTags(_ tags: [Tag]){
         for tag in tags {
             removeTag(tag)
         }
@@ -64,35 +64,36 @@ class LanguageAnalyzer: NSObject {
     
     /** Analyzes the input sentence through the Model. If a label is returned that is recognized within the tags subscribed, will call the labelfound function on the delegate.*/
     func analyze(_ sentence: String) {
+        #if DEBUG
         print("Starting analysis of " + sentence)
+        #endif
         let input = VoxosonusMLModelInput(text: sentence)
 
         do {
-            print("Starting prediction")
             let modelPrediction = try model.prediction(input: input)
-            let predictedLabel = modelPrediction.label
+            let predictedLabel = Tag(tagname: modelPrediction.label)
             
-            print("Prediction label is " + predictedLabel)
-            if(_tagDictionary.contains(predictedLabel)){
-                print("Casting to the delegate")
+            #if DEBUG
+            print("Prediction label is " + predictedLabel.value)
+            #endif
+            if(_tagDictionary.contains(where: { $0.value == predictedLabel.value })){
                 delegate.labelFound(predictedLabel)
             } else {
+                #if DEBUG
                 print("The label found was not subscribed")
-                delegate.labelFound("undefined") //Return undefined. There is an argument to be made that perhaps this should return either nothing or should trigger something else in the delegate. This seems to be the simpler solution.
+                #endif
+                delegate.labelFound(Tag(tagname: "undefined")) //Return undefined. There is an argument to be made that perhaps this should return either nothing or should trigger something else in the delegate. This seems to be the simpler solution.
             }
         } catch {
+            #if DEBUG
             print("Encountered an error")
             print(error)
+            #endif
         }
-    }
-    
-    /** Debug function. Remove later */
-    func debug() {
-        analyze("the quick brown fox jumped over the lazy dog")
     }
 }
 
 /** Protocol implementing the labelFound function when the LanguageAnalyzer has completed analyzation of the input sentence. This should be kept internally. If you want the public protocol, view the VoxosonusDelegate protocol. */
 protocol LanguageAnalyzerDelegate: class {
-    func labelFound(_ label: String)
+    func labelFound(_ label: Tag)
 }
