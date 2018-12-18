@@ -1,12 +1,18 @@
 # ![Voxosonus Logo](./WikiImages/Voxosonus_Full.png)
+Swift Text-based Machine Learning for humans.
 
 ![Travis CI](https://travis-ci.org/HeercoGrond/Voxosonus.svg?branch=master)
 
 ## Requirements
+Implementation of Framework:
+* iOS 11.0+
+* Xcode 9.4+
+* Swift 4.0+
 
-This framework will only run on iOS 11.x devices because of the usage of the CoreML model. Beware before you use this framework.
-
-Also for the usage of the Playgrounds in the VoxosonusMLSuite folder you will need MacOS Mojave (10.14) because of the usage of the CreateML library.
+Creation of Model:
+* macOS 10.14+
+* Swift 4.2+
+* Xcode 10+
 
 ## Author
 
