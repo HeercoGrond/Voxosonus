@@ -1,12 +1,18 @@
 # ![Voxosonus Logo](./WikiImages/Voxosonus_Full.png)
+Swift Text-based Machine Learning for humans.
 
 ![Travis CI](https://travis-ci.org/HeercoGrond/Voxosonus.svg?branch=master)
 
 ## Requirements
+Implementation of Framework:
+* iOS 11.0+
+* Xcode 9.4+
+* Swift 4.0+
 
-This framework will only run on iOS 11.x devices because of the usage of the CoreML model. Beware before you use this framework.
-
-Also for the usage of the Playgrounds in the VoxosonusMLSuite folder you will need MacOS Mojave (10.14) because of the usage of the CreateML library.
+Creation of Model:
+* macOS 10.14+
+* Swift 4.2+
+* Xcode 10+
 
 ## Author
 
@@ -15,6 +21,12 @@ HeercoGrond, heercogrond@live.nl
 ## License
 
 Voxosonus is available under the MIT license. See the LICENSE file for more info.
+
+## Why Voxosonus? 
+
+Machine Learning is becoming more commonplace in development, heavy handed tasks that can be offset through a certain trained model or a convolutional neural network that will calculate based on the data it is set to analyze to produce predictions based on what the user has said. However I noticed a distinct lack in applications using the technology while it could offer an interesting solution, mostly because the complexity of the subject is very high.
+
+Voxosonus is meant to lower the bar of entry and make Machine Learning for Swift understandable and implementable through a basic framework that offers users to transfer speech to text and text to a model, even using their own data. It is meant to be flexible and adaptable to a developer's needs, so it is easy for beginners to understand and for advanced developers to extend. As such, all the code is fully open source and can be adapted at will. 
 
 ## Usage
 
@@ -59,7 +71,7 @@ class ViewController: UIViewController, VoxosonusDelegate {
         model.delegate = self;
        
         // You can subscribe tags that will be added and 'listened' to when the framework starts listening to speech.
-        model.subscribeTag(tag: "decision_replies")
+        model.subscribeTag(tag: Tag(tagname: "decision_replies"))
     }
     
     // An example of the listening of the framework bound to a button.
@@ -68,8 +80,8 @@ class ViewController: UIViewController, VoxosonusDelegate {
     }
     
     // This function is inherited from the VoxosonusDelegate protocol and will fire once the framework has been done processing and analyzing the spoken sentence. 
-    func labelFound(label: String) {
-        print(label)
+    func labelFound(label: Tag) {
+        print(label.value)
     }
 }
 ```
@@ -101,6 +113,6 @@ Make sure you have done the proper importing, using `import Voxosonus`, then ver
 
 * You have implemented the `VoxosonusDelegate` and set the `Voxosonus` class' delegate to the file with it.
 
-* You have subscribed tags through the model. 
+* You have subscribed a 'Tag' through the model. 
 
 If you have done the following and are still encountering problems, please make an issue in the repository. 
