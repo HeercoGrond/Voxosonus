@@ -22,6 +22,12 @@ HeercoGrond, heercogrond@live.nl
 
 Voxosonus is available under the MIT license. See the LICENSE file for more info.
 
+## Why Voxosonus? 
+
+Machine Learning is becoming more commonplace in development, heavy handed tasks that can be offset through a certain trained model or a convolutional neural network that will calculate based on the data it is set to analyze to produce predictions based on what the user has said. However I noticed a distinct lack in applications using the technology while it could offer an interesting solution, mostly because the complexity of the subject is very high.
+
+Voxosonus is meant to lower the bar of entry and make Machine Learning for Swift understandable and implementable through a basic framework that offers users to transfer speech to text and text to a model, even using their own data. It is meant to be flexible and adaptable to a developer's needs, so it is easy for beginners to understand and for advanced developers to extend. As such, all the code is fully open source and can be adapted at will. 
+
 ## Usage
 
 To implement the Voxosonus Framework some steps need to be undertaken:
@@ -107,6 +113,6 @@ Make sure you have done the proper importing, using `import Voxosonus`, then ver
 
 * You have implemented the `VoxosonusDelegate` and set the `Voxosonus` class' delegate to the file with it.
 
-* You have subscribed tags through the model. 
+* You have subscribed a 'Tag' through the model. 
 
 If you have done the following and are still encountering problems, please make an issue in the repository. 
