@@ -65,7 +65,7 @@ class ViewController: UIViewController, VoxosonusDelegate {
         model.delegate = self;
        
         // You can subscribe tags that will be added and 'listened' to when the framework starts listening to speech.
-        model.subscribeTag(tag: "decision_replies")
+        model.subscribeTag(tag: Tag(tagname: "decision_replies"))
     }
     
     // An example of the listening of the framework bound to a button.
@@ -74,8 +74,8 @@ class ViewController: UIViewController, VoxosonusDelegate {
     }
     
     // This function is inherited from the VoxosonusDelegate protocol and will fire once the framework has been done processing and analyzing the spoken sentence. 
-    func labelFound(label: String) {
-        print(label)
+    func labelFound(label: Tag) {
+        print(label.value)
     }
 }
 ```
