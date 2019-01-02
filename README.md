@@ -4,15 +4,11 @@ Swift Text-based Machine Learning for humans.
 ![Travis CI](https://travis-ci.org/HeercoGrond/Voxosonus.svg?branch=master)
 
 ## Requirements
-Implementation of Framework:
-* iOS 11.0+
-* Xcode 9.4+
-* Swift 4.0+
-
-Creation of Model:
-* macOS 10.14+
-* Swift 4.2+
+* iOS 12.0+
 * Xcode 10+
+* Swift 4.2+
+
+It is usable for iOS 11.0+, however the pod and the supplied files have only been tested on the above.
 
 ## Author
 
@@ -21,6 +17,14 @@ HeercoGrond, heercogrond@live.nl
 ## License
 
 Voxosonus is available under the MIT license. See the LICENSE file for more info.
+
+## Installing
+
+### CocoaPods 
+
+[CocoaPods]("https://cocoapods.org/") is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile:`
+
+```pod 'Voxosonus', '~> 0.1'``` 
 
 ## Why Voxosonus? 
 
