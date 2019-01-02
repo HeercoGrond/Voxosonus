@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8936F04521C9055200BA8115 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936F04421C9055200BA8115 /* Tag.swift */; };
 		8936F05721C90DD300BA8115 /* VoxosonusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936F05621C90DD300BA8115 /* VoxosonusTests.swift */; };
 		8936F05921C90DD300BA8115 /* Voxosonus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BEB99321BFD1E900C70ADA /* Voxosonus.framework */; };
-		89BEB97F21B6913900C70ADA /* LanguageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97921B6913900C70ADA /* LanguageAnalyzer.swift */; };
-		89BEB98021B6913900C70ADA /* Voxosonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97A21B6913900C70ADA /* Voxosonus.swift */; };
-		89BEB98321B6913900C70ADA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */; };
-		89BEB98821B691C800C70ADA /* VoxosonusMLModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89BEB98521B691C700C70ADA /* VoxosonusMLModel.mlmodel */; };
-		89BEB98A21B691C800C70ADA /* Voxosonus.h in Headers */ = {isa = PBXBuildFile; fileRef = 89BEB98721B691C700C70ADA /* Voxosonus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899F5C3521DD2CC9001986D9 /* Voxosonus.h in Headers */ = {isa = PBXBuildFile; fileRef = 899F5C3421DD2CC9001986D9 /* Voxosonus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		899F5C3721DD2CE7001986D9 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899F5C3621DD2CE7001986D9 /* SpeechRecognizer.swift */; };
+		899F5C3921DD2CED001986D9 /* LanguageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899F5C3821DD2CED001986D9 /* LanguageAnalyzer.swift */; };
+		899F5C3B21DD2CF1001986D9 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899F5C3A21DD2CF1001986D9 /* Tag.swift */; };
+		899F5C3D21DD2CFA001986D9 /* Voxosonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899F5C3C21DD2CFA001986D9 /* Voxosonus.swift */; };
+		899F5C3F21DD2CFE001986D9 /* VoxosonusMLModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 899F5C3E21DD2CFE001986D9 /* VoxosonusMLModel.mlmodel */; };
+		899F5C4021DD2D3A001986D9 /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = 899F5C2A21DD2BC1001986D9 /* Sources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,19 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8936F04421C9055200BA8115 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		8936F05421C90DD300BA8115 /* VoxosonusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxosonusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8936F05621C90DD300BA8115 /* VoxosonusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxosonusTests.swift; sourceTree = "<group>"; };
 		8936F05821C90DD300BA8115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		89BEB97921B6913900C70ADA /* LanguageAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageAnalyzer.swift; sourceTree = SOURCE_ROOT; };
-		89BEB97A21B6913900C70ADA /* Voxosonus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voxosonus.swift; sourceTree = SOURCE_ROOT; };
+		899F5C2821DD2A28001986D9 /* Voxosonus.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Voxosonus.podspec; sourceTree = "<group>"; };
+		899F5C2A21DD2BC1001986D9 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources; sourceTree = "<group>"; };
+		899F5C3421DD2CC9001986D9 /* Voxosonus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voxosonus.h; sourceTree = "<group>"; };
+		899F5C3621DD2CE7001986D9 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeechRecognizer.swift; path = Sources/SpeechRecognizer.swift; sourceTree = "<group>"; };
+		899F5C3821DD2CED001986D9 /* LanguageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAnalyzer.swift; sourceTree = "<group>"; };
+		899F5C3A21DD2CF1001986D9 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		899F5C3C21DD2CFA001986D9 /* Voxosonus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voxosonus.swift; sourceTree = "<group>"; };
+		899F5C3E21DD2CFE001986D9 /* VoxosonusMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VoxosonusMLModel.mlmodel; sourceTree = "<group>"; };
 		89BEB97B21B6913900C70ADA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		89BEB97C21B6913900C70ADA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = SOURCE_ROOT; };
-		89BEB98521B691C700C70ADA /* VoxosonusMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VoxosonusMLModel.mlmodel; sourceTree = SOURCE_ROOT; };
-		89BEB98621B691C700C70ADA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
-		89BEB98721B691C700C70ADA /* Voxosonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voxosonus.h; sourceTree = SOURCE_ROOT; };
-		89BEB98D21BFCE0C00C70ADA /* MachineLearningTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MachineLearningTools; sourceTree = SOURCE_ROOT; };
 		89BEB99321BFD1E900C70ADA /* Voxosonus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voxosonus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,16 +67,16 @@
 		8936F04321C9053400BA8115 /* Voxosonus */ = {
 			isa = PBXGroup;
 			children = (
-				89BEB98D21BFCE0C00C70ADA /* MachineLearningTools */,
-				89BEB98621B691C700C70ADA /* Info.plist */,
-				89BEB98721B691C700C70ADA /* Voxosonus.h */,
-				89BEB98521B691C700C70ADA /* VoxosonusMLModel.mlmodel */,
-				89BEB97921B6913900C70ADA /* LanguageAnalyzer.swift */,
+				899F5C3E21DD2CFE001986D9 /* VoxosonusMLModel.mlmodel */,
+				899F5C3C21DD2CFA001986D9 /* Voxosonus.swift */,
+				899F5C3A21DD2CF1001986D9 /* Tag.swift */,
+				899F5C3821DD2CED001986D9 /* LanguageAnalyzer.swift */,
+				899F5C3621DD2CE7001986D9 /* SpeechRecognizer.swift */,
+				899F5C3421DD2CC9001986D9 /* Voxosonus.h */,
+				899F5C2A21DD2BC1001986D9 /* Sources */,
+				899F5C2821DD2A28001986D9 /* Voxosonus.podspec */,
 				89BEB97C21B6913900C70ADA /* LICENSE */,
 				89BEB97B21B6913900C70ADA /* README.md */,
-				89BEB97D21B6913900C70ADA /* SpeechRecognizer.swift */,
-				89BEB97A21B6913900C70ADA /* Voxosonus.swift */,
-				8936F04421C9055200BA8115 /* Tag.swift */,
 			);
 			name = Voxosonus;
 			sourceTree = "<group>";
@@ -106,7 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BEB98A21B691C800C70ADA /* Voxosonus.h in Headers */,
+				899F5C3521DD2CC9001986D9 /* Voxosonus.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				899F5C4021DD2D3A001986D9 /* Sources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,11 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BEB98021B6913900C70ADA /* Voxosonus.swift in Sources */,
-				89BEB97F21B6913900C70ADA /* LanguageAnalyzer.swift in Sources */,
-				8936F04521C9055200BA8115 /* Tag.swift in Sources */,
-				89BEB98821B691C800C70ADA /* VoxosonusMLModel.mlmodel in Sources */,
-				89BEB98321B6913900C70ADA /* SpeechRecognizer.swift in Sources */,
+				899F5C3D21DD2CFA001986D9 /* Voxosonus.swift in Sources */,
+				899F5C3721DD2CE7001986D9 /* SpeechRecognizer.swift in Sources */,
+				899F5C3921DD2CED001986D9 /* LanguageAnalyzer.swift in Sources */,
+				899F5C3F21DD2CFE001986D9 /* VoxosonusMLModel.mlmodel in Sources */,
+				899F5C3B21DD2CF1001986D9 /* Tag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +240,7 @@
 		8936F05D21C90DD300BA8115 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUX35HW2S3;
 				INFOPLIST_FILE = VoxosonusTests/Info.plist;
@@ -257,6 +260,7 @@
 		8936F05E21C90DD300BA8115 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SUX35HW2S3;
 				INFOPLIST_FILE = VoxosonusTests/Info.plist;
@@ -406,7 +410,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -434,7 +438,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
