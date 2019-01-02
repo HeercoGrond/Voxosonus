@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Voxosonus"
-  s.version      = "1.0.0"
+  s.version      = "0.1.0"
   s.summary      = "Swift Text-Based Machine Learning for Humans"
 
   # This description is used to generate tags and improve search results.
