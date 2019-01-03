@@ -22,27 +22,23 @@ Voxosonus is available under the MIT license. See the LICENSE file for more info
 
 ### CocoaPods 
 
-[CocoaPods]("https://cocoapods.org/") is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile:`
+[CocoaPods]("https://cocoapods.org/") is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Voxosonus into your Xcode project using CocoaPods, specify it in your `Podfile:`
 
-```pod 'Voxosonus', '~> 0.1'``` 
+```ruby
+pod 'Voxosonus', '~> 0.2'
+``` 
+
+or, if using a self-built version of the Cocoa Pod, add the following instead to use the local pod:
+
+```ruby
+pod `Voxosonus', :path => '../path/to/Voxosonus'
+```
 
 ## Why Voxosonus? 
 
 Machine Learning is becoming more commonplace in development, heavy handed tasks that can be offset through a certain trained model or a convolutional neural network that will calculate based on the data it is set to analyze to produce predictions based on what the user has said. However I noticed a distinct lack in applications using the technology while it could offer an interesting solution, mostly because the complexity of the subject is very high.
 
 Voxosonus is meant to lower the bar of entry and make Machine Learning for Swift understandable and implementable through a basic framework that offers users to transfer speech to text and text to a model, even using their own data. It is meant to be flexible and adaptable to a developer's needs, so it is easy for beginners to understand and for advanced developers to extend. As such, all the code is fully open source and can be adapted at will. 
-
-## Usage
-
-To implement the Voxosonus Framework some steps need to be undertaken:
-
-The base of the framework is built for iOS 11.x devices. This means that in order to effectively run the framework and it's code, you should beware that your app is only available on iOS 11.x or higher.
-
-In order to utilize the framework as is with the dataset provided within the framework (as detailed in the `dataset.json,` which is a filtered version of the `WatsonConversationCarWorkspace.json` ) you will need to copy the built version of the framework into your folder and add it to your project alongside defining it as one of the embedded libraries as shown below. 
-
-![Adding the project](./WikiImages/embed.png)
-
-If you are only interested in the provided version of the framework, see the `Framework` folder. This will for now only be the built version for x64 iPhones.
 
 ## Creating your own model
 
@@ -52,7 +48,7 @@ The tools are provided to create your own model in the `./MachineLearningTools` 
 
 The FilterLabeledData playground is setup to change the json of a IBM Watson workspace to a readable format for the CreateVoxosonusModel playground. Input either file into the resources of the playground and change the variables to load in the specified dataset to either adapt or change. In both cases the results will be saved to your documents. 
 
-If you have created a new model, you can simply replace the existing VoxosonusMLModel file in the project and build a new version of the framework for your intended use or directly replace it in the Framework's folder. It is strongly suggested to do the former, since behaviour can be unpredictable when changing the built framework. 
+If you have created a new model, you can simply replace the existing VoxosonusMLModel file in the project and build a new version of the framework for your intended use or directly link the cocoa pod as described above. It is strongly suggested to do the latter, since behaviour can be unpredictable when 
 
 ## Implementation of Framework
 
@@ -92,7 +88,7 @@ class ViewController: UIViewController, VoxosonusDelegate {
 
 ## Troubleshooting
 
-### The dataset I've used seems imcompatible.
+### The dataset I've used seems incompatible.
 
 In the comments of the CreateVoxosonusModel playground is a short description of expected data. Generally if you keep to a structure of a json file with a label and a text field, it will work. An example would be such:
 
@@ -109,7 +105,7 @@ In the comments of the CreateVoxosonusModel playground is a short description of
 ]
 ```
 
-### I've loaded in the framework, however it doesn't seem to work.
+### I've loaded in the pod or framework, however it doesn't seem to work.
 
 Make sure you have done the proper importing, using `import Voxosonus`, then verify the following:
 
