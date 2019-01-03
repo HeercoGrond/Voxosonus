@@ -1,0 +1,6 @@
+language: objective-c
+osx_image: xcode10
+xcode_project: Voxosonus.xcodeproj
+xcode_scheme: Voxosonus
+xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone XS
+script: xcodebuild -project Voxosonus.xcodeproj -scheme Voxosonus -destination platform\=iOS\ Simulator,OS\=12.0,name\=iPhone\ XS build test | xcpretty
