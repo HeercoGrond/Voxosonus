@@ -8,7 +8,7 @@ Swift Text-based Machine Learning for humans.
 * Xcode 10+
 * Swift 4.2+
 
-It is usable for iOS 11.0+, however the pod and the supplied files have only been tested on the above.
+Voxosonus is usable for iOS 11.0+, however the pod and the supplied files have only been tested on the above.
 
 ## Author
 
