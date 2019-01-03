@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Voxosonus"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "Swift Text-Based Machine Learning for Humans"
 
   # This description is used to generate tags and improve search results.
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Sources", "Sources/**/*.{h,m,mlmodel}"
+  s.source_files  = "Sources", "Sources/**/*.{h,m,mlmodel}", "Framework"
   s.exclude_files = "Sources/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
