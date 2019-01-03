@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89D6134821DD9EEC003B6A60 /* Voxosonus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D6133E21DD9EEB003B6A60 /* Voxosonus.framework */; };
+		89D6134D21DD9EEC003B6A60 /* VoxosonusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6134C21DD9EEC003B6A60 /* VoxosonusTests.swift */; };
+		89D6134F21DD9EEC003B6A60 /* Voxosonus.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D6134121DD9EEB003B6A60 /* Voxosonus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89D6135921DD9F35003B6A60 /* Voxosonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6135821DD9F35003B6A60 /* Voxosonus.swift */; };
+		89D6135B21DD9F68003B6A60 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6135A21DD9F68003B6A60 /* SpeechRecognizer.swift */; };
+		89D6135D21DD9F71003B6A60 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6135C21DD9F71003B6A60 /* Tag.swift */; };
+		89D6135F21DD9F82003B6A60 /* LanguageAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D6135E21DD9F82003B6A60 /* LanguageAnalyzer.swift */; };
+		89D6136521DDA008003B6A60 /* VoxosonusMLModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 89D6136421DDA008003B6A60 /* VoxosonusMLModel.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89D6134921DD9EEC003B6A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89D6133521DD9EEB003B6A60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89D6133D21DD9EEB003B6A60;
+			remoteInfo = Voxosonus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89D6133E21DD9EEB003B6A60 /* Voxosonus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Voxosonus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D6134121DD9EEB003B6A60 /* Voxosonus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Voxosonus.h; sourceTree = "<group>"; };
+		89D6134221DD9EEB003B6A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D6134721DD9EEC003B6A60 /* VoxosonusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoxosonusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D6134C21DD9EEC003B6A60 /* VoxosonusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxosonusTests.swift; sourceTree = "<group>"; };
+		89D6134E21DD9EEC003B6A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89D6135821DD9F35003B6A60 /* Voxosonus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voxosonus.swift; sourceTree = "<group>"; };
+		89D6135A21DD9F68003B6A60 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		89D6135C21DD9F71003B6A60 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		89D6135E21DD9F82003B6A60 /* LanguageAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageAnalyzer.swift; sourceTree = "<group>"; };
+		89D6136421DDA008003B6A60 /* VoxosonusMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = VoxosonusMLModel.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89D6133B21DD9EEB003B6A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89D6134421DD9EEC003B6A60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D6134821DD9EEC003B6A60 /* Voxosonus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89D6133421DD9EEB003B6A60 = {
+			isa = PBXGroup;
+			children = (
+				89D6134021DD9EEB003B6A60 /* Voxosonus */,
+				89D6134B21DD9EEC003B6A60 /* VoxosonusTests */,
+				89D6133F21DD9EEB003B6A60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89D6133F21DD9EEB003B6A60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89D6133E21DD9EEB003B6A60 /* Voxosonus.framework */,
+				89D6134721DD9EEC003B6A60 /* VoxosonusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89D6134021DD9EEB003B6A60 /* Voxosonus */ = {
+			isa = PBXGroup;
+			children = (
+				89D6136421DDA008003B6A60 /* VoxosonusMLModel.mlmodel */,
+				89D6134121DD9EEB003B6A60 /* Voxosonus.h */,
+				89D6134221DD9EEB003B6A60 /* Info.plist */,
+				89D6135821DD9F35003B6A60 /* Voxosonus.swift */,
+				89D6135A21DD9F68003B6A60 /* SpeechRecognizer.swift */,
+				89D6135C21DD9F71003B6A60 /* Tag.swift */,
+				89D6135E21DD9F82003B6A60 /* LanguageAnalyzer.swift */,
+			);
+			path = Voxosonus;
+			sourceTree = "<group>";
+		};
+		89D6134B21DD9EEC003B6A60 /* VoxosonusTests */ = {
+			isa = PBXGroup;
+			children = (
+				89D6134C21DD9EEC003B6A60 /* VoxosonusTests.swift */,
+				89D6134E21DD9EEC003B6A60 /* Info.plist */,
+			);
+			path = VoxosonusTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		89D6133921DD9EEB003B6A60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D6134F21DD9EEC003B6A60 /* Voxosonus.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		89D6133D21DD9EEB003B6A60 /* Voxosonus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89D6135221DD9EEC003B6A60 /* Build configuration list for PBXNativeTarget "Voxosonus" */;
+			buildPhases = (
+				89D6133921DD9EEB003B6A60 /* Headers */,
+				89D6133A21DD9EEB003B6A60 /* Sources */,
+				89D6133B21DD9EEB003B6A60 /* Frameworks */,
+				89D6133C21DD9EEB003B6A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Voxosonus;
+			productName = Voxosonus;
+			productReference = 89D6133E21DD9EEB003B6A60 /* Voxosonus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		89D6134621DD9EEC003B6A60 /* VoxosonusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89D6135521DD9EEC003B6A60 /* Build configuration list for PBXNativeTarget "VoxosonusTests" */;
+			buildPhases = (
+				89D6134321DD9EEC003B6A60 /* Sources */,
+				89D6134421DD9EEC003B6A60 /* Frameworks */,
+				89D6134521DD9EEC003B6A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89D6134A21DD9EEC003B6A60 /* PBXTargetDependency */,
+			);
+			name = VoxosonusTests;
+			productName = VoxosonusTests;
+			productReference = 89D6134721DD9EEC003B6A60 /* VoxosonusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89D6133521DD9EEB003B6A60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Heerco Grond";
+				TargetAttributes = {
+					89D6133D21DD9EEB003B6A60 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					89D6134621DD9EEC003B6A60 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 89D6133821DD9EEB003B6A60 /* Build configuration list for PBXProject "Voxosonus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89D6133421DD9EEB003B6A60;
+			productRefGroup = 89D6133F21DD9EEB003B6A60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89D6133D21DD9EEB003B6A60 /* Voxosonus */,
+				89D6134621DD9EEC003B6A60 /* VoxosonusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89D6133C21DD9EEB003B6A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89D6134521DD9EEC003B6A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89D6133A21DD9EEB003B6A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D6135D21DD9F71003B6A60 /* Tag.swift in Sources */,
+				89D6136521DDA008003B6A60 /* VoxosonusMLModel.mlmodel in Sources */,
+				89D6135921DD9F35003B6A60 /* Voxosonus.swift in Sources */,
+				89D6135B21DD9F68003B6A60 /* SpeechRecognizer.swift in Sources */,
+				89D6135F21DD9F82003B6A60 /* LanguageAnalyzer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89D6134321DD9EEC003B6A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89D6134D21DD9EEC003B6A60 /* VoxosonusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89D6134A21DD9EEC003B6A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89D6133D21DD9EEB003B6A60 /* Voxosonus */;
+			targetProxy = 89D6134921DD9EEC003B6A60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		89D6135021DD9EEC003B6A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89D6135121DD9EEC003B6A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		89D6135321DD9EEC003B6A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SUX35HW2S3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Voxosonus/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.Voxosonus;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89D6135421DD9EEC003B6A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SUX35HW2S3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Voxosonus/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.Voxosonus;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89D6135621DD9EEC003B6A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUX35HW2S3;
+				INFOPLIST_FILE = VoxosonusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.VoxosonusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89D6135721DD9EEC003B6A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUX35HW2S3;
+				INFOPLIST_FILE = VoxosonusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.heercoGrond.VoxosonusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89D6133821DD9EEB003B6A60 /* Build configuration list for PBXProject "Voxosonus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89D6135021DD9EEC003B6A60 /* Debug */,
+				89D6135121DD9EEC003B6A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89D6135221DD9EEC003B6A60 /* Build configuration list for PBXNativeTarget "Voxosonus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89D6135321DD9EEC003B6A60 /* Debug */,
+				89D6135421DD9EEC003B6A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89D6135521DD9EEC003B6A60 /* Build configuration list for PBXNativeTarget "VoxosonusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89D6135621DD9EEC003B6A60 /* Debug */,
+				89D6135721DD9EEC003B6A60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89D6133521DD9EEB003B6A60 /* Project object */;
+}
