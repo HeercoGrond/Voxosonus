@@ -109,7 +109,7 @@ In the comments of the CreateVoxosonusModel playground is a short description of
 
 Make sure you have done the proper importing, using `import Voxosonus`, then verify the following:
 
-* The framework is properly added as described in the Usage part of this readme.
+* The framework is properly added as a file or as a pod to your project.
 
 * You have implemented the `VoxosonusDelegate` and set the `Voxosonus` class' delegate to the file with it.
 
