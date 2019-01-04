@@ -48,9 +48,9 @@ The tools are provided to create your own model in the `./MachineLearningTools` 
 
 The FilterLabeledData playground is setup to change the json of a IBM Watson workspace to a readable format for the CreateVoxosonusModel playground. Input either file into the resources of the playground and change the variables to load in the specified dataset to either adapt or change. In both cases the results will be saved to your documents. 
 
-If you have created a new model, you can simply replace the existing VoxosonusMLModel file in the project and build a new version of the framework for your intended use or directly link the cocoa pod as described above. It is strongly suggested to do the latter, since behaviour can be unpredictable when 
+If you have created a new model, you can simply replace the existing VoxosonusMLModel file in the project and build a new version of the framework for your intended use or directly link the cocoa pod as described above. It is strongly suggested to do the latter, since updates can be directly applied as well if there are certain changes you make to the framework.
 
-## Implementation of Framework
+## Implementation of Voxosonus
 
 The below code is a simple Swift 4.2 implementation on an iOS 12.0 device as shown in the VoxosonusExampleApp added to this project.
 
