@@ -10,10 +10,6 @@ Swift Text-based Machine Learning for humans.
 
 Voxosonus is usable for iOS 11.0+, however the pod and the supplied files have only been tested on the above.
 
-## Author
-
-HeercoGrond, heercogrond@live.nl
-
 ## License
 
 Voxosonus is available under the MIT license. See the LICENSE file for more info.
@@ -116,3 +112,9 @@ Make sure you have done the proper importing, using `import Voxosonus`, then ver
 * You have subscribed a 'Tag' through the model. 
 
 If you have done the following and are still encountering problems, please make an issue in the repository. 
+
+
+## Author
+
+HeercoGrond, heercogrond@live.nl
+
